@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='cache-control' content='max-age=0' />
+  <meta http-equiv='cache-control' content='no-cache' />
+  <meta http-equiv='expires' content='0' />
+  <meta http-equiv='expires' content='Tue, 01 Jan 1980 1:00:00 GMT' />
+  <meta http-equiv='pragma' content='no-cache' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='viewport' content='width=device-width'>
+  <link rel='stylesheet' href='css/normalize.min.css'>
+  <link rel='stylesheet' href='css/style.css?v=1.0'></link>
+  <link rel='stylesheet' href='css/prism.css'></link>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+  <script src='main.js'></script>
+  <title>DESMA28: Interactivity</title>
+</head>
+<body>
+  <div class='container'>
+    <div class='content'>
+
+      <!-- NAV -->
+      <nav>
+        <ul id='links'>
+          <li class='button' data-id='syllabus'>Syllabus</li>
+          <li class='button' data-id='schedule'>Schedule</li>
+          <li class='button' data-id='projects'>Projects</li>
+          <li class='button' data-id='resources'>Resources</li>
+          <li><a target='_blank' href='https://docs.google.com/spreadsheets/d/16dWc859RkhebYJE3cqERsGFiyyLLTW0MNH-i4vKQ5Kc/edit?usp=sharing'>Attendance</a></li>
+        </ul>
+      </nav>
+
+      <!-- HEADING -->
+      <h1><a href=''>DESMA28: Interactivity</a></h1>
+
+      <!-- SYLLABUS -->
+      <div id='syllabus' class='block' style='display: block'>
+        
+        <h2>Syllabus</h2>
+        <section>
+          Monday and Wednesday 9-11:50am<br>
+          UCLA Broad Art Center 4220
+          <br><br>
+          Professor: <a href='mailto:lmccart@ucla.edu'>Lauren McCarthy</a>
+          <br>(office hours: Wednesdays 12-1p, Broad 3246)
+          <br><br>
+          TA: <a href='mailto:hyeminchocho@gmail.com'>Hye Min Cho</a>
+          <br>(office hours: TBA)<br>
+          
+        </section>
+        
+        <section>
+          <h3>Description</h3>
+          <p>This course has two goals:</p>
+            <ol>
+              <li>Provide an introduction to writing code within the context of the visual arts. Writing code involves learning a different way of thinking and making.</li>
+              <li>Interrogate the concept of "interactivity" and consider how this applies to art, design, and code. Through this exploration you may gain a deeper understanding of how users, viewers, and people experience your work.</li>
+            </ol>
+
+          <p>The ideas and skills taught in this course set a foundation for future Design Media Arts courses about the internet (161), game design (157), and media arts (159A, 171).</p>
+        </section>
+        
+        <section>
+          <h3>Expectations</h3>
+          <span class='label'>Grading.</span> Grades will be determined according to the following breakdown:
+            <ul>
+              <li>Project 0 10%</li>
+              <li>Project 1 10%</li>
+              <li>Project 2 10%</li>
+              <li>Project 3 10%</li>
+              <li>Project 4 10%</li>
+              <li>Project 5 10%</li>
+              <li>Final project 30%</li>
+              <li>Participation 10%</li>
+            </ul>
+          <p>Outstanding or exceptional work will receive As, good work will receive Bs, sufficient work that does nothing more than meet requirements will receive Cs.</p>
+          
+          <p><span class='label'>Participation.</span> Participation is critical to passing and enjoying this class. Do the work, share your thoughts, ask questions, prepare for meetings, offer feedback during critiques. This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don’t assume, ask. Remain open, be willing to take responsibility, apologize, and learn. Help each other in this. If there are concerns please let me or Hye Min know as soon as possible.</p>
+          
+          <p><span class='label'><a href='https://docs.google.com/spreadsheets/d/16dWc859RkhebYJE3cqERsGFiyyLLTW0MNH-i4vKQ5Kc/edit?usp=sharing' target='_blank'>Attendance.</a></span>You get one unexcused absence, no questions asked. Each unexcused absence after that will result in one full letter grade deduction. Three unexcused absences will result in a failed grade in the class. If there is an emergency and you must miss class, email <a href='hyeminchocho@gmail.com'>Hye Min</a> before class. Absences will not be excused after the fact except in extreme circumstances. Illness requires a doctor’s note. If you are more than 10 minutes late, you will be marked tardy. Three tardies results in one unexcused absence. Your attendance can be viewed <a href='https://docs.google.com/spreadsheets/d/16dWc859RkhebYJE3cqERsGFiyyLLTW0MNH-i4vKQ5Kc/edit?usp=sharing' target='_blank'>here</a>, any disputes should be discussed with the TA within two weeks.</p>
+          
+          <p><span class='label'>Late work.</span> Late work will not be accepted. If you are absent, you are still expected to turn in projects online by the deadline.</p>
+        </section>
+
+
+        <section>
+          <h3>Commitment to Diversity and Safer Spaces</h3>
+          <p>We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA. (<a href='https://github.com/voidlab/diversity-statement'>tx voidLab!</a>)</p>
+        </section>
+
+
+        <section>
+          <h3>Disability Services</h3>
+          <p>UCLA strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on a disability, please let me know as soon as possible. It is necessary for you to register with the <a href='http://www.cae.ucla.edu/'>UCLA Center for Accessible Education</a> so that we can establish reasonable accommodations. After registration, make arrangements with me to discuss how to implement these accommodations.</p>
+        </section>
+      </div>
+
+      <!-- SCHEDULE -->
+      <div id='schedule' class='block'>
+        <h2>Schedule</h2>
+        <section>
+          <table>
+            <!-- WEEK 1 -->
+            <tr>
+              <td>WEEK 1</td>
+              <td>M 1/7</td>
+              <td>
+                Introduction
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 1/9</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+
+            <!-- WEEK 2 -->
+            <tr>
+              <td>WEEK 2</td>
+              <td>M 1/14</td>
+              <td>
+                ❗DUE: <a onclick="openSection('#projects', 'p2')">Project brief</a>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 1/16</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+
+            <!-- WEEK 3 -->
+            <tr>
+              <td>WEEK 3</td>
+              <td>M 1/21</td>
+              <td>
+                MLK Day: no class
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 1/23</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 4 -->
+            <tr>
+              <td>WEEK 4</td>
+              <td>M 1/28</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 1/30</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 5 -->
+            <tr>
+              <td>WEEK 5</td>
+              <td>M 2/4</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 2/6</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 6 -->
+            <tr>
+              <td>WEEK 6</td>
+              <td>M 2/11</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 2/13</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            <!-- WEEK 7 -->
+            <tr>
+              <td>WEEK 7</td>
+              <td>M 2/18</td>
+              <td>
+                Presidents Day: no class
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 2/20</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 8 -->
+            <tr>
+              <td>WEEK 8</td>
+              <td>M 2/25</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 2/27</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 9 -->
+            <tr>
+              <td>WEEK 9</td>
+              <td>M 3/4</td>
+              <td>         
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 3/6</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 10 -->
+            <tr>
+              <td>WEEK 10</td>
+              <td>M 3/11</td>
+              <td>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 3/13</td>
+              <td>
+                ❗DUE: <a onclick="openSection('#projects', 'p2')">Final project</a>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+          </table>
+        </section>
+      </div>
+
+      <!-- PROJECTS -->
+      <div id='projects' class='block'>
+        
+        <h2>Projects</h2>
+        <section>
+          <h3 id="p1">PECHA KUCHA (DUE 4/2)</h3>
+          <div id="p1-content" class='toggle' style='display:none;'>
+            <p>We will open the first class with 5 minute pecha kucha presentations (15 slides x 20 seconds each). The goal of your presentation is to share who you are, what kinds of work you make, and what you want to focus on for your senior project.</p>
+
+            <p>Please use <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">this pecha kucha template</a> which has auto-timed slides set up for you. There are 15 slides, each designed to play for 20 seconds. Here are instructions to make a copy and setup your presentation:</p>
+
+            <ol>
+              <li>Open the <a href="https://docs.google.com/presentation/d/1JDzS5hW8lYUJvmH7PK9ngVp0TmfU-CPuBVhYkqcGSU4/edit?usp=sharing" target="_blank">template</a>. Go to File > Make a Copy.</li>
+              <li>Fill in the slide contents (you can delete the numbers).</li>
+              <li>When it's done, go to File > Publish to the web, and select these settings and click Publish:
+                <img src="imgs/publish.png">
+              </li>
+              <li>Copy the link and test it in your browser. In the URL, add an extra 0 to the part that says 2000, so it reads "delayms=20000". This will make the slides advance every 20s.</li>
+              <li>Add this updated URL and your name to <a href="https://docs.google.com/document/d/1d0DW5Dq2gJWVkJ9mnUsIlXAJxOPnJl_BGVzjzeZUN_E/edit?usp=sharing" target="_blank">this doc</a> before the start of the first class on 4/2.</li>
+            </ol>
+            <br>
+
+            <p>Slides 1-10 should contain previous work you've done that best illustrates your skills and interests. This need not cover everything you’ve made, just the most relevant work. You might include images, text, or video clips. You can present 10 different works, or multiple images of a fewer number of projects.</p>
+
+            <p>Slides 11-12 should contain your initial direction for your senior project. Determine a topic or issue that you would like to focus on for this project. It could be something in the news, a question on your mind, an issue you feel needs more awareness, or anything else. The topic should be <b>specific</b>, and something you can form a <b>unique point of view</b> around. That is, "cats" or "the color red" are probably not appropriate topics. The first two slides should introduce your topic of focus and tell us why it's interesting to you.</p>
+
+            <p>Slides 13-15 should contain three <b>different</b> possible ideas for what your senior project will be. What form it may take, how it might specifically address your topic, what it might communicate. Remember, you only have 20 seconds to talk about each idea so your slide will need to be concise.</p>
+
+            <p>The timing of a pecha kucha is fast. <b>You will need to rehearse in advance.</b> This is your senior project. This is your chance to start with momentum and make a really great project.</p>
+
+          </div>
+
+          <h3 id="p2">PROJECT BRIEF (DUE Week 2)</h3>
+          <div id="p2-content" class='toggle' style='display:none;'>
+            Think about the three ideas you presented in your pecha kucha. Pick one to move forward with, or pick something else entirely, and begin to flesh it out. What is the subject matter you're dealing with? What are the tools and media you will use to explore it? Your project should build on what is already showing in your porfolio. Recognize your strengths, and use those skills rather than work in a medium that you have no experience with.<br><br>
+            Your project brief should give a description of your project, including its aims, its areas of research, its intended audiences, and a realistic production timeline. Come up with a list of questions you have, and that you want to find answers to, during the design process.
+          </div>
+
+          <h3 id="p3">RESEARCH (DUE Week 3)</h3>
+          <div id="p3-content" class='toggle' style='display:none;'>
+            Starting with your project brief, spend this week researching the context and precedents for your topic and ideas. You will focus on research this week, but the research should continue throughout the 10 weeks process.<br><br>
+            Content-wise: Who wrote about this? What are the different points of view? What are the pros and cons? Collect texts, articles, images, interviews, links, etc.<br><br>
+            Image-wise: What does the subject matter look like? How have other artists visualized the subject matter? What do you want the subject matter to look like? Collect images, photographs, notes.
+          </div>
+
+          <h3 id="p4">MIDTERM PLAN (DUE Week 4)</h3>
+          <div id="p4-content" class='toggle' style='display:none;'>
+            In your meeting this week, you will confirm the details of what you will present for the midterm review. The midterm review should be a proof of concept / prototype of your final project. See the info under <a onclick="openSection('#projects', 'p5')">midterm review</a> for more details.<br><br>
+            Please prepare a document that includes:
+            <ol>
+              <li>Short description of your project, including final output. Three sentences or less.</li>
+              <li>Description of what you plan to show for the review. You might include sketches or mockups.</li>
+              <li>What are the main questions you hope to answer in the review? Consider: Are there interactions you want to test? Are there specific parts that you want feedback on? You might try writing about what experience you hope the audience has, to compare with how they actually react.</li>
+              <li>What work do you need to do in the next week to get there?</li>
+            </ol>
+          </div>
+
+          <h3 id="p5">MIDTERM REVIEW (DUE 4/30)</h3>
+          <div id="p5-content" class='toggle' style='display:none;'>
+            The midterm is a chance to get feedback from a range of people. You should prepare a prototype of your final project that will serve as a proof of concept. This should be something further developed than sketches or an idea proposal. You can use multiple forms to communicate your idea. For example: If you are making an interactive website, you might show a simplified version in progress alongside illustrator mock-ups of how you'd like the pages to look. If you are creating an installation, you might install some of the unfinished elements, and include stand-in objects or drawings for the parts that aren't built yet. You will be installing somewhere on the 4th floor. All three classrooms are open, as are the hallway and common spaces. It's up to you to work out space amongst yourselves.
+            <br><br>
+            Think of this as a first user test, there should be an experience of a thing (not just a hypothetical idea) for us to react to. The goal is to get feedback on how the work is functioning already, and ideas about where it might go. We will be breaking into smaller groups for the review, mixing classes. Practice explaining your project in a minute or less so you can get the maximum time for feedback. Copies of the project descriptions will be distributed so ideally you won't need to say anything at all. It is recommended that you bring a list of questions you hope to answer and see if you can write out answers to them after the review.
+            <br><br>
+            <b>IMPORTANT!</b> You must input your project info, description, and equipment requests into the <a href="https://docs.google.com/spreadsheets/d/1VpE9JW-4CE_yfZtL2O7kqzb1K3_KSSeLlWtLO1DOqvk/edit#gid=1873695528">show spreadsheet</a> by the EOD on 4/30. Failure to do so will mean you won't get priority consideration for your equipment requests.
+          </div>
+
+          <h3 id="p6">CONTEXT WRITE-UP (DUE 5/7)</h3>
+          <div id="p6-content" class='toggle' style='display:none;'>
+            <p>You are required to attend at least one exhibition, screening, talk, or event that relates to your project in some way. This needs to be outside of UCLA, and in-person (not online). See the <a href="http://classes.dma.ucla.edu/Spring18/159A/#resources">resources page</a> for ideas. In response to this experience, you will write a critique. Within your critique, you must identify the artist/designer and work, describe the elements and materials, analyze relationships between elements, consider composition and content and then interpret the work and its purpose. The length should be about one page. Below is a guide intended to help, though you do not need to follow it precisely. <b>Email this assignment to <a href='mailto:lmccart@ucla.edu'>Lauren</a> by EOD on 5/7.</b></p>
+
+            <p>Writing an Art Critique (the Feldman Method)<br>
+            Adapted from Edmund Feldman’s Aesthetic Criticism as set out in <i>Varieties of Visual Experience</i>.</p>
+            <ol>
+              <li>Introduction<br>
+              Give an introduction to the facts of the exhibit/screening. Who? What?
+              When? Where? If a group exhibition, choose one artwork to critique and identify
+              the artis(s), the title, the medium and year the work was created.</li>
+              
+              <li>Description<br>
+              Make objective or value-neutral statements about the work in question.
+              Exclude interpretations and evaluations, and instead take an objective
+              inventory of the work. Point out single features such as objects, trees, and
+              people. Then point out abstract elements such as shapes and colors.
+              Finally point out materials or technologies used to compose this artwork.
+              *A test of objectivity would be that most people would agree with your
+              statement.</li>
+
+              <li>Formal analysis<br>
+              Make statements about the relations among the things you named in the
+              descriptions (part 2). You should note similarities and dissimilarities in
+              formal elements–such things as color, shape, or direction. Take note of
+              continuities (such as the color red repeated throughout the work) and of
+              connections (for example, the shape of a window repeated in the shape of
+              a table) between these formal elements and the subject matter. What kind
+              of spatial devices are used to create dimensionality? Do you see
+              examples of repetition or rhythm? Finally, note the overall qualities of the
+              work.</li>
+
+              <li>Interpretation<br>
+              Make statements about the meaning(s) of the work. This is the most
+              creative part of your critique. Using a hypothesis, support it with
+              arguments, based on evidence given in the description and formal
+              analysis. (parts 2 and 3)</li>
+
+              <li>Judgment<br>
+              This is the most complex part of the critique and requires an opinion
+              regarding the worth of an object, based on what was learned in the
+              previous stages of the critique. Evaluate the craftsmanship and technique.
+              Are parts of the work successfully interrelated? Does the work illicit a
+              response or communicate an idea? Are you moved by this work? What
+              do you think of it? What is your aesthetic judgment? And on what is
+              based?</li>
+
+              <li>Conclusion<br>
+              What does this leave you thinking about? How does it relate to your own project and ideas? What are you biggest takeaways?</li>
+            </ol>
+          </div>
+
+          <h3 id="p7">TIMELINE (DUE 5/9)</h3>
+          <div id="p7-content" class='toggle' style='display:none;'>
+            You have about three weeks until install begins! For the remaining time, make a production timeline that is <b>as detailed as possible</b>. Here are some tips:
+            <ul>
+              <li>I would suggest breaking things down with at least two deadlines to hit per week. This will help you structure your time and not find yourself at the end of the week with more than you can get done.</li>
+              <li>Consider the rest of your courseload in your plan. If you have a project due in another class, you might want to strategically schedule your deadlines around it.</li>
+              <li>DO user testing. Schedule some times when you want to have people test out your projects. You might coordinate this with a few classmates so you hold each other accountable and can all show up to test each other's work. Do this before the last week!</li>
+              <li>Be sure to build in some "safety time" at the end for last minute changes, polishing, and tweaks. Planning production up until the show opening will cause you stress and anxiety, and may result in your project not getting finished. I would suggest leaving at least 5 days between your project complete deadline and the first day of install (6/1).</li>
+            </ul>
+          </div>
+
+          <h3 id="p8">INVITATION TO INDUSTRY (DUE 5/21)</h3>
+          <div id="p8-content" class='toggle' style='display:none;'>
+            **In addition to the pdf described below, please also send one image that represents your senior project as a separate file (at least 1920x1080px).**<br><br>
+            This is a pdf due via email to <a href='mailto:stalgia.grigg@gmail.com'>stalgia.grigg@gmail.com</a> by EOD on 5/21. We will be sending it out along with an invitation to the show to the contacts from career day and other potential employers. It should be a 3-5 page pdf on 8.5x11" vertical pages. The format is as follows:<br><br>
+            PAGE 01<br>
+            name, e-mail, website + contact info<br>
+            describe/list the media you work in and your technical skills<br><br>
+            PAGE 02<br>
+            senior project: title, description, images (of process)<br><br>
+            PAGE 03 / 04 /05<br>
+            previous works: title, description, images per project
+          </div>
+
+          <h3 id="p9">INSTALLATION (DUE 6/1)</h3>
+          <div id="p9-content" class='toggle' style='display:none;'>
+            Install your project in the EDA! Show opens June 7! Watch out for emails with further details and updates.
+          </div>
+
+          <h3 id="p10">FINAL DOCUMENTATION (DUE 6/15)</h3>
+          <div id="p10-content" class='toggle' style='display:block;'>
+            Present your project as a 1 to 2 minute video, OR a series of photographs, OR some combination of these two options. Videos can be uploaded to Vimeo for easy embedding. Load the video, photographs, and any other content along with title and text description into a project page in the DMA Gallery: <a href='http://gallery.dma.ucla.edu' target='_blank'>gallery.dma.ucla.edu</a>. Send the Cargo URL and Vimeo URL (if applicable) of your project to <a href='mailto:lmccart@ucla.edu'>Lauren</a> (with the email subject "159A Final 2018") by <b>noon on Friday 6/15</b>. This counts for 20% of your final grade and it's invaluable to you. Do a great job!
+            <br><br>
+            Cargo submission notes:
+            <ol>
+              <li>If you don’t have a Cargo account, please email <a href='mailto:cbmcwilliams@ucla.edu' target='_blank'>Chandler McWilliams</a> and he will send you a free invite.</li>
+              <li>If you have a Cargo account but aren’t in the DMA group, you can join it <a href='http://gallery.dma.ucla.edu/join' target='_blank'>here</a>.</li>
+              <li>Please tag your project with <a href='http://gallery.dma.ucla.edu/filter/159A_2018' target='_blank'>"159A_2018"</a> so we can view everyone's work together.</li>
+            </ol>
+          </div>
+        </section>
+        
+      </div>
+
+
+      <!-- RESOURCES -->
+      <div id='resources' class='block'>
+        
+        <h2>Resources</h2>
+
+        <section>
+          <h3 id="p3">USEFUL INFO</h3>
+          Jonathan Cecil <a href='mailto:jonathancecil@arts.ucla.edu'>jonathancecil@arts.ucla.edu</a><br>
+          Gareth Walsh <a href='mailto:gwalsh@arts.ucla.edu'>gwalsh@arts.ucla.edu</a>
+        </section>
+
+        <section>
+          <h3 id="p3">THINGS TO SEE AROUND LA</h3>
+          
+          More soon..
+          <!-- <h3 id="tools">TOOLS</h3>
+          <ul>
+            <li><a href="https://www.google.com/chrome/browser/">Chrome</a> - You may use any browser you like but this one will be used for demos in class</li>
+            <li><a href="http://brackets.io/">Brackets</a> - Code editor for HTML/CSS/JS</li>
+            <li><a href="https://cyberduck.io/?l=en">Cyberduck</a> - FTP tool for uploading files online</li>
+            <li><a href="./ftp/">How to FTP</a> - Uploading your files online with Cyberduck</li>
+          </ul> -->
+        </section>
+        
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
