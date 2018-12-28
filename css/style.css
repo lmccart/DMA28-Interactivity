@@ -4,7 +4,7 @@ body {
   font-family: 'Inconsolata', sans-serif;
   line-height: 1.4em;
   font-size: 18px;
-  background: #dbffff;
+  background: #f5ffff;
 }
 
 *, *:before, *:after {
@@ -72,13 +72,13 @@ nav ul {
 }
 
 a, .button {
-  color: #ec003e;
+  color: black;
   text-decoration: none;
   cursor: pointer;
+  background: yellow;
 }
 
 h1 a {
-  color: black;
   background: none !important;
 }
 
@@ -163,9 +163,7 @@ ol li {
 }
 
 #projects h4 {
-  color: #ff00f7;
-  display: inline-block;
-  margin-top: 0;
+  font-weight: bold;
 }
 
 a:hover, .button:hover, #projects h3:hover, #projects h4:hover {
