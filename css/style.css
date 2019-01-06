@@ -186,6 +186,15 @@ pre {
   right: 50px;
 }
 
+#updated {
+  width: 100%;
+  text-align: right;
+  color: #d0d0d0;
+  position: relative;
+  right: -1.5em;
+  bottom: -1.5em;
+}
+
 
 @media screen and (max-width: 800px) {
   body {

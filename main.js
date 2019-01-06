@@ -5,6 +5,10 @@ $(document).ready(function() {
     openSection(hash);
   }
 
+  $.get('date.json', function(data) {
+    $('#updated_date').html(data.date);
+  });
+
   $('#links .button').click(function() {
     var selected = '#'+$(this).data('id');
     openSection(selected);
