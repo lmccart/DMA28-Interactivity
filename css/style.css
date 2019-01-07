@@ -1,9 +1,9 @@
 body {
   padding: 0;
   margin: 3em; 
-  font-family: 'Inconsolata', sans-serif;
+  font-family: 'Source Sans Pro', input-mono-narrow, sans-serif;
   line-height: 1.4em;
-  font-size: 18px;
+  font-size: 16px;
   background: #f5ffff;
 }
 
@@ -25,13 +25,14 @@ nav li {
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 h1 {
   margin: 1em 0 3em 0;
   padding: 0;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.75em;
   text-align: center;
 }
@@ -44,6 +45,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
+  font-size: 1.25em;
 }
 
 h3, table {
