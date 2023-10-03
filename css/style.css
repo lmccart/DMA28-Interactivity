@@ -52,6 +52,10 @@ h3, table {
   margin-top: 2em;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
