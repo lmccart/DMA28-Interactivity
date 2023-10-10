@@ -14,9 +14,9 @@ $(document).ready(function() {
     openSection(selected);
   });
 
-  $('#projects h3').click(function() {
+  $('#studies h3').click(function() {
     var selected = $(this).attr('id');
-    openSection('#projects', selected);
+    openSection('#studies', selected);
   });
 });
 
@@ -27,8 +27,8 @@ function openSection(id, heading) {
     if (heading) $('.toggle').hide();
     $(id).show();
     $('#'+heading+'-content').show();    
-    if ($('#projects div.toggle:visible')[0]) {
-      open = $('#projects div.toggle:visible')[0].id.substring(0, 2);
+    if ($('#studies div.toggle:visible')[0]) {
+      open = $('#studies div.toggle:visible')[0].id.substring(0, 2);
     }
     window.location.hash = id.substring(1);
     if (!heading) {
