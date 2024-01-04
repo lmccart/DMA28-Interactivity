@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='cache-control' content='max-age=0' />
+  <meta http-equiv='cache-control' content='no-cache' />
+  <meta http-equiv='expires' content='0' />
+  <meta http-equiv='expires' content='Tue, 01 Jan 1980 1:00:00 GMT' />
+  <meta http-equiv='pragma' content='no-cache' />
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='viewport' content='width=device-width'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel='stylesheet' href='css/normalize.min.css'>
+  <link rel='stylesheet' href='css/style.css?v=1.0'></link>
+  <link rel='stylesheet' href='css/prism.css'></link>
+  <link ref='icon' type='image/x-icon' href='https://lmccart.github.io/DMA28-Interactivity/favicon.ico'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <script src='https://code.jquery.com/jquery-3.1.1.min.js' integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=' crossorigin='anonymous'></script>
+  <script src='main.js'></script>
+  <title>DESMA28: Interactivity</title>
+</head>
+<body>
+  <div class='container'>
+    <div class='content'>
+
+      <!-- NAV -->
+      <nav>
+        <ul id='links'>
+          <li class='button' data-id='syllabus'>Syllabus</li>
+          <li class='button' data-id='schedule'>Schedule</li>
+          <li class='button' data-id='studies'>studies</li>
+          <li class='button' data-id='resources'>Resources</li>
+        </ul>
+      </nav>
+
+      <!-- HEADING -->
+      <h1><a href=''>DESMA28: Interactivity</a></h1>
+
+      <!-- SYLLABUS -->
+      <div id='syllabus' class='block' style='display: block'>
+        
+        <h2>Syllabus</h2>
+        <section>
+          Tuesday and Thursday 9–11:50am<br>
+          UCLA Broad Art Center 4240
+          <br><br>
+          Professor: Lauren Lee McCarthy (<a href='mailto:lmccart@ucla.edu'>lmccart@ucla.edu</a>)
+          <br>(office hours: Tuesdays 5-6pm, Broad 3246)
+          <br><br>
+          TA: Jules Johnston (<a href='mailto:julesjohnston@g.ucla.edu'>julesjohnston@g.ucla.edu</a>)
+          <br>(office hours: Thursday 1-2pm, Mars Lab Broad 3261 A)<br>
+          
+        </section>
+        
+        <section>
+          <h3>Description</h3>
+          <p>This course is an introduction to coding within the visual arts, with a focus on interactivity. Writing code involves learning a different way of thinking and making. We will consider interactions with other people and the environment as the starting point for understanding our interactions with code. We’ll consider the roles of race, gender, sexuality, disability, and class within an increasingly software-driven world, and strategies of response as artists and designers. Can we understand software as inherently social? The ideas and skills taught in this course set a foundation that will serve as a platform for future learning within the BA program and beyond. The class is taught as a series of workshops and discussions with demonstrations and time to work.</p>
+          <p>This course asks a few questions:<br>
+            — How has software affected the visual arts?<br>
+            — What is the potential of software within the visual arts?<br>
+            — As a designer or artist, why would I want (or need) to write software?<br>
+            — What are the power relationships, inequities, and biases embedded within software and technology?
+          </p>
+          <p>
+            For this foundation we will focus on five sets of ideas:<br>
+            — Instructions and Statements<br>
+            — Variables and Response<br>
+            — Questions and Conditionals<br>
+            — Tools and Interactions<br>
+            — Functions and Parameters
+          </p>
+        </section>
+        
+        <section>
+          <h3>Studies</h3>
+          <p>This class is built around five studies, each with a media assignment (reading + videos), a workshop, and a discussion about your finished study on the day that it’s due. Each study derives from the elements above. The final project will push one of the studies further. All studies will be completed in p5.js and are due at the start of class via the <a href="https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit?usp=sharing" target="_blank">studies spreadsheet</a>.</p>
+          <p>Studies may be turned in up to one week late for a one letter grade deduction off the grade. Work that is more than one week late will not be accepted. If you are absent, you are expected to turn in studies online by the deadline. It is possible that you may encounter save issues, editor or browser errors, computer crash, etc. It is highly recommended that you regularly click File > Download to save copies of your work in progress as zip files.</p>
+
+        </section>
+        <section>
+          <h3>Expectations</h3>
+          <p><span class='label'>Grading.</span> Grading is based on the studies, the final project, and active participation. Focus, articulation of ideas, keeping up with the work and assignments, and contribution to class discussions are all part of participation. All work will be evaluated based on (1) the fundamental idea you develop, (2) the way the “look and feel” of the work relates to the idea, and (3) the craft, meaning the details of the images, motion, and interaction. Outstanding work will receive As, good work will receive Bs, sufficient work that does nothing more than meet requirements will receive Cs.</p>
+          <span>The numeric breakdown for all assignments follow:</span>
+          <ul>
+            <li>Participation 10%</li>
+            <li>Study 1 12%</li>
+            <li>Study 2 12%</li>
+            <li>Study 3 12%</li>
+            <li>Study 4 12%</li>
+            <li>Study 5 12%</li>
+            <li>Final project 25%</li>
+            <li>Final project documentation 5%</li>
+            </ul>
+          
+          <p><span class='label'><a onclick='openSection("#studies")'>Studies.</a></span> Studies are due at the start of class on the date assigned via the <a href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a>. Studies may be turned in up to one week late for a one letter grade deduction off the study grade. Work that is more than one week late will not be accepted. If you are absent, you are still expected to turn in studies online by the deadline. Extra time will not be given for work lost due to save issues, editor or browser errors, computer crash, etc. You should regularly click File > Download to save a copies of your work in progress as zip files. It would also be wise to make a backup of these online or on an external harddrive or USB stick in case your computer is lost.</p>
+
+          <p><span class='label'>Media.</span> Each study will be accompanied by a collection of readings, videos, and other media to look at. You are expected to read/watch/consume each item listed. Doing so will make this class much easier and more enjoyable. If it is clear you are not doing this work, your study grades will lower. All of the assigned readings from the course will be from <a href='https://www.amazon.com/Getting-Started-p5-js-Interactive-JavaScript-dp-1457186772/dp/1457186772/ref=mt_paperback?_encoding=UTF8&me=&qid=' target='_blank'>Getting Started with p5.js</a> or located online, you will need to purchase this textbook.</p>
+
+          <p><span class='label'>Participation.</span> Participation is critical to passing and enjoying this class. Do the work, share your thoughts, ask questions, prepare for meetings, offer feedback during critiques. This class is meant to be a safe space in which you feel encouraged and supported in learning and taking creative risks. This means being aware and considerate of different backgrounds, perspectives, and identities. Respect each other and this space we are building together. Don’t assume, ask. Remain open, be willing to take responsibility, apologize, and learn. Help each other in this. If there are concerns please let me or Hye Min know as soon as possible.</p>
+          
+          <p><span class='label'>Attendance.</span> I have the strong expectation that you will join for each class and workshop session, but I won’t be keeping a scored attendance record this quarter. If something happens and you can't join the class, please email me. If you feel frustrated or you come across other problems, please communicate with me directly and quickly.</p>
+        </section>
+
+
+        <section>
+          <h3>Commitment to Diversity and Safer Spaces</h3>
+          <p>We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA. (<a href='https://github.com/voidlab/diversity-statement'>tx voidLab!</a>)</p>
+        </section>
+
+
+        <section>
+          <h3>Disability Services</h3>
+          <p>UCLA strives to make all learning experiences as accessible as possible. If you anticipate or experience academic barriers based on a disability, please let me know as soon as possible. It is necessary for you to register with the <a href='http://www.cae.ucla.edu/'>UCLA Center for Accessible Education</a> so that we can establish reasonable accommodations. After registration, make arrangements with me to discuss how to implement these accommodations.</p>
+        </section>
+      </div>
+
+      <!-- SCHEDULE -->
+      <div id='schedule' class='block'>
+        <h2>Schedule</h2>
+        <section>
+          <table>
+            <!-- WEEK 1 -->
+            <tr>
+              <td>WEEK 1</td>
+              <td>Tu 10/3</td>
+              <td>
+                Introduction<br>
+                Assign Study 1
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 10/5</td>
+              <td>
+                Studio<br>
+                DUE: <a onclick="openSection('#studies', 'p1')">Study 1, part 1</a><br>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+
+            <!-- WEEK 2 -->
+            <tr>
+              <td>WEEK 2</td>
+              <td>Tu 10/10</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p1')">Study 1, part 2</a><br>
+                Assign Study 2
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 10/12</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p2')">Study 2, part 1</a><br>
+                Studio
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+
+            <!-- WEEK 3 -->
+            <tr>
+              <td>WEEK 3</td>
+              <td>Tu 10/17</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p2')">Study 2, part 2</a><br>
+                Assign Study 3
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 10/19</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p3')">Study 3, part 1</a><br>
+                Studio<br>
+                <b>MFA Exhibition: This Time / Next Time, New Wight Gallery (5pm)</b>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 4 -->
+            <tr>
+              <td>WEEK 4</td>
+              <td>Tu 10/24</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p3')">Study 3, part 2</a><br>
+                Assign Study 4
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 10/26</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p4')">Study 4, part 1</a><br>
+                Studio
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 5 -->
+            <tr>
+              <td>WEEK 5</td>
+              <td>Tu 10/31</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p4')">Study 4, part 2</a><br>
+                Individual meetings
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 11/2</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p4')">Study 4, part 3</a><br>
+                Individual meetings<br>
+                Assign Study 5
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+          
+            <!-- WEEK 6 -->
+            <tr>
+              <td>WEEK 6</td>
+              <td>Tu 11/7</td>
+              <td>
+                Studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>W 11/8</td>
+              <td>
+                7:30pm at the Hammer, <a href="https://hammer.ucla.edu/programs-events/2023/tanya-aguiniga-ambos-art-made-between-opposite-sides" target="_blank">Tanya Aguiñiga & AMBOS: Art Made Between Opposite Sides</a>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 11/9</td>
+              <td>
+                Studio
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+
+            <!-- WEEK 7 -->
+            <tr>
+              <td>WEEK 7</td>
+              <td>Tu 11/14</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p5')">Study 5</a><br>
+                Assign Final Project
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 11/16</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p6')">Final Project Proposal</a><br>
+                Individual meetings:<br>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Time</td><td>Lauren</td><td>Jules</td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td></td><td></td></tr>
+                    <tr>
+                      <td>9:15</td><td>Ash</td><td>Rachel</td>
+                    </tr>
+                      <td>9:30</td><td>Sonny</td><td>Halle</td>
+                    </tr>
+                    <tr>
+                      <td>9:45</td><td>Yash</td><td>Nicolas</td>
+                    </tr>
+                    <tr>
+                      <td>10:00</td><td>Marie</td><td>Pam</td>
+                    </tr>
+                    <tr>
+                      <td>10:15</td><td>Beau</td><td>Jatearra</td>
+                    </tr>
+                    <tr>
+                      <td>10:30</td><td>Yugo</td><td>Sana</td>
+                    </tr>
+                    <tr>
+                      <td>10:45</td><td>Dina</td><td>August</td>
+                    </tr>
+                    <tr>
+                      <td>11:00</td><td>Makeda</td><td>Jose</td>
+                    </tr>
+                    <tr>
+                      <td>11:15</td><td>Amelia</td><td>Hugo</td>
+                    </tr>
+                    <tr>
+                      <td>11:30</td><td>Rafael</td><td>Coco</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+
+            <!-- WEEK 8 -->
+            <tr>
+              <td>WEEK 8</td>
+              <td>Tu 11/21</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p6')">Artist/Designer Presentation</a><br>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 11/23</td>
+              <td>
+                NO CLASS: THANKSGIVING
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 9 -->
+            <tr>
+              <td>WEEK 9</td>
+              <td>Tu 11/28</td>
+              <td>
+                Studio
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>Th 11/30</td>
+              <td>
+                Studio
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+            <!-- WEEK 10 -->
+            <tr>
+              <td>WEEK 10</td>
+              <td>Tu 12/5</td>
+              <td>   
+                DUE: <a onclick="openSection('#studies', 'p6')">Final Project</a>
+              </td>
+            </tr>
+            <tr class='spacer'></tr>
+            <tr>
+              <td></td>
+              <td>F 12/8</td>
+              <td>
+                DUE: <a onclick="openSection('#studies', 'p7')">Final Project documentation</a>
+              </td>
+            </tr>
+            <tr class='weekspacer'></tr>
+            
+          </table>
+        </section>
+      </div>
+
+      <!-- studies -->
+      <div id='studies' class='block'>
+        
+        <h2>studies</h2>
+        <section>
+          <p>Studies are due at the start of class on the date assigned via the <a href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a>. studies may be turned in up to one week late for a one letter grade deduction off the study grade. Work that is more than one week late will not be accepted. If you are absent, you are still expected to turn in studies online by the deadline.</p>
+
+          <h3 id='p1'>Study 1: Instruct (DUE 10/10)</h3>
+          <div id='p1-content' class='toggle' style='display:none;'>
+
+            <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>1/Hello</li>
+              <li><s>2/Starting to Code</s> (skip this)</li>
+              <li>3/Draw</li>
+            </ul>
+
+            YouTube:
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=yPWkPOfnGsw">1.1: Code! Programming for Beginners with p5.js</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=MXs1cOlidWs">1.2: p5.js Web Editor</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=c3TeLi6Ns1E">1.3: Shapes &amp; Drawing</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=riiJTF5-N7c">1.4: Color</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=LuGsp5KeJMM">1.5: Errors &amp; Console</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=xJcrPJuem5Q">1.6: Code Comments</a></li>
+            </ul>
+
+            <p>Read and watch all of the media. Type and run the programs as you read the text. Create an account and write the code at <a href='https://editor.p5js.org/' target='_blank'>editor.p5js.org</a>. Note: The editor Dan is using from tutorial 2.1 forward is different from the online editor, but all of the code is the same.</p>
+
+            <h4>Description</h4>
+            Part 1 due 10/5:
+              <ul>
+                <li>Spend some time looking at instructions or guides for using various technologies. This might mean a setup guide for a piece of technology, cooking instructions, a TikTok video giving advice, an assembly instructions for Ikea furniture, etc. Think broadly about the terms “technology” and “instructions”. Select one and add a link to it in the <a href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a>.</li>
+                <li>In partners, pick an activity that you both do regularly. Each partner creates a set of instructions for how they perform this activity. Exchange instruction sets and follow them as best you can.</li>
+
+              </ul>
+            Part 2 due 10/10:
+            <ul>
+              <li>Use p5.js to create a visual representation interpreting one, both, or a combination of your instruction sets. Each of you will create your own study but they should visually relate to each other somehow. Turn your study in via the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a> by 9am on 10/10. Come prepared to share in class.</li>
+            </ul>
+          </div>
+
+          <h3 id='p2'>Study 2: Mask (DUE 10/17)</h3>
+          <div id='p2-content' class='toggle' style='display:none;'>
+            <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>4/Variables</li>
+              <li>5/Response (pages 59-63)</li>
+            </ul>
+
+            YouTube:
+            <ul>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=RnS0YNuLfQQ">2.1: Variables in p5.js (mouseX, mouseY)</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=Bn_B3T_Vbxs">2.2: Variables in p5.js (Make your own)</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=nicMAoW6u1g">2.4: The map() function</a></li>
+            </ul>
+
+            Online:
+            <ul>
+              <li><a target='_blank' href='https://itp.nyu.edu/classes/performinguser/files/2016/03/Haraway-CyborgManifesto-1.pdf'>Donna Haraway, Cyborg Manifesto (optional but recommended!)</a></li>
+            </ul>
+
+            <p>Read and watch all of the media in time for class on Thursday. Type and run the programs as you read the text.</p>
+
+            <h4>Description</h4>
+              Part 1 due 10/12: 
+              <ul><li>
+                Write or select a short text (one paragraph or less) that you will read/perform for the class.
+              </li></ul>
+              Part 2 due 10/17: 
+              <ul><li>
+                Working with a partner, intercut your two texts to create a script for a conversation. It can be abstract. 
+                Based on the text, design and build a virtual mask that you will use to perform the text. 
+                Using the <a href='https://editor.p5js.org/lmccart/sketches/6QmbU580W'>provided code template</a>, make your mask react to audio, changing as the volume of your voice changes. 
+                This project will be evaluated based on how the face relates to the text, the variation of the mask (how much is changes), the design of the mask, and your performance of it.
+                Turn your study in via the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a> by 9am on 10/17. 
+                Include the text to be performed as a comment at the top of the code. You will perform your mask in class. 
+                Rehearse your text performance ahead of time, modulating the volume of your voice as needed to control the mask.
+              </li></ul>
+
+          </div>
+
+          <h3 id='p3'>Study 3: One Question Interview. One Loop Story. (DUE 10/24)</h3>
+          <div id='p3-content' class='toggle' style='display:none;'>
+
+            <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>8/Motion</li>
+              <li>7/Translate, Rotate, Scale</li>
+            </ul>
+
+            <ul>
+              <li><a href='https://www.youtube.com/watch?v=1Osb_iGDdjk' target='_blank'>3.1: Introduction to Conditional Statements</a>
+              <li><a href='https://www.youtube.com/watch?v=LO3Awjn_gyU' target='_blank'>3.2: The Bouncing Ball</a>
+              <li><a href='https://www.youtube.com/watch?v=o9sgjuh-CBM' target='_blank'>9.1: Transformations Pt.1 (Translate, Rotate, Push/Pop)</a></li>
+              <li><a href='https://www.youtube.com/watch?v=nfmV2kuQKwA' target='_blank'>2.5: The random() Function</a>
+            </ul>
+            
+            Web: 
+            <ul>
+              <li><a target='_blank' href="https://github.com/golanlevin/lectures/blob/master/lecture_loops/README.md">LOOPs by Golan Levin</a></li>
+            </ul>
+
+            <p>Read all of the media in time for class on Thursday. Type and run the programs as you read the text.</p>
+
+            <h4>Description</h4>
+            Part 1 due 10/19: 
+            <ul><li>
+              Pick one question to ask of other people. For a few days, ask as many people as you can your question, take notes on their answers.
+              You could ask a friend or family member, a classmate, someone you see in your daily life, someone far away, a stranger...
+            </li></ul>
+            Part 2 due 10/24: 
+            <ul><li>
+              Create a looping animation inspired by an answer to your question. 
+              You may want to start by writing a one sentence story to focus things. 
+              See examples <a href='http://monkeybicycle.net/one-sentence-stories/'>here</a> and <a href='https://web.archive.org/web/20190808135338/http://www.roarreadingseries.com/one-sentence-story-contest.html'>here</a> and <a href='http://web.archive.org/web/20140528015912/http://onesentence.org/'>here</a>.
+              Turn in your study via the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a> by 9am on 10/24.
+            </li></ul>
+          </div>
+
+          <h3 id='p4'>Study 4: Tools and Interactions (DUE 11/2)</h3>
+          <div id='p4-content' class='toggle' style='display:none;'>
+            <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>5/Response (whole chapter this time)</li>
+              <li><a href='http://amodern.net/wp-content/uploads/2016/05/2010_Original_Rosa-Menkman-Glitch-Studies-Manifesto.pdf' target='_blank'>Rosa Menkman, Glitch Studies Manifesto</a></li>
+            </ul>
+
+            YouTube:
+            <ul>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=1Osb_iGDdjk">3.1: Introduction to Conditional Statements</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=r2S7j54I68c">3.3: Else and Else if, AND and OR</a></li>
+              <li><a target='_blank' href="https://www.youtube.com/watch?v=Rk-_syQluvc">3.4: Boolean Variables</a></li>
+            </ul>
+
+            <p>Read and watch all of the media in time for class on Monday. Type and run the programs as you read the text.</p>
+
+            <h4>Description</h4>
+
+            <p>There's a long history of writing software to draw on computers. From the light pen, to the mouse, to touch screens, some of these programs are basic and some are bursting with features; some are serious and others are whimsical; some are general and others are as unique as the individual who wrote them. This project has three parts. You will make a separate sketch for each part of the project, the canvas for each sketch should be 600 x 600 pixels.</p>
+
+            <p>PART 1 (2 points)<br>
+              Use the mouseX, mouseY, and mouseIsPressed variables in a program to make the simplest drawing program you can imagine, but with a slight twist.</p>
+
+            <p>PART 2 (2 points)<br>
+              Start with your code from Part A and add the keyPressed() event function to clear the screen with a different color when each of the keys 1-5 is pressed. Select your colors thoughtfully and carefully.</p>
+
+            <p>PART 3 (6 points)<br>
+              Write a drawing program in the tradition of <a href='https://jamesfriend.com.au/pce-js/' target='_blank'>Kid Pix</a>. Include, at the minimum, at least two different tools for making marks and two other features. Create an interface to select which tool to draw with, by creating buttons and/or by using the keyboard. Have a clear point of view about drawing that is expressed through the design of your program. How is your drawing program unique and what is it for? Write a detailed comment at the top of the code that explains the core idea of the software.</p> 
+
+            <p>Enter the link for each part of the study into the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=0'>studies spreadsheet</a> by 9am on 11/2. Come prepared to share in class.</p>
+          </div>
+
+          <h3 id='p5'>Study 5: Collective (DUE 11/14)</h3>
+          <div id='p5-content' class='toggle' style='display:none;'>
+             <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>7/Media</li>
+              <li>9/Functions</li>
+              <!-- <li>11/Arrays</li> -->
+            </ul>
+
+            You Tube:
+            <ul>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=rO6M5hj0V-o&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=36&t=1s&ab_channel=TheCodingTrain">Uploading Media Files</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=wRHAitGzBrg&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=21&ab_channel=TheCodingTrain">5.1: Function Basics</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=zkc417YapfE&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=22&ab_channel=TheCodingTrain">5.2: Function Parameters and Arguments</a></li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=qRnUBiTJ66Y&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=23&ab_channel=TheCodingTrain">5.3: Functions and Return</a></li>
+              <!-- <li><a target="_blank" href="https://www.youtube.com/watch?v=VIQoUghHSxU&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=28&ab_channel=TheCodingTrain">7.1: What is an array?</li>
+              <li><a target="_blank" href="https://www.youtube.com/watch?v=RXWO3mFuW-I&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=29&ab_channel=TheCodingTrain">7.2: Arrays and Loops</li> -->
+            
+            </ul>
+
+            <h4>Description</h4>
+
+            <p>Working in partners, make a work that is collectively created in some way. This may be an installation that different people interact and contribute to.
+              It may be something created by media or text collectively sourced. Or anything else you can imagine. The result should be a dynamically
+              evolving visual, textual, sonic, or performative artifcat that develops from a novel interaction betwen friends, siblings, collaborators,
+              neighbors, or strangers. Carefully consider the kinds of actions or authorship you hope to elicit, and how the interaction design of
+              your system influences individual (and hence collective) behavior. Paradoxically, the tightest constraints can often produce the most
+              interesting results. Can you create the conditions for unexpected emergent behaviors to arise? 
+              <b>Use at least one function that you define yourself in your code.</b>
+            </p>
+            
+            <p>Attend <a href="https://hammer.ucla.edu/programs-events/2023/tanya-aguiniga-ambos-art-made-between-opposite-sides">Tanya Aguiñiga & AMBOS: Art Made Between Opposite Sides</a>
+              at the Hammer on Wednesday evening, or visit the Made In LA show during the daytime. Write a 1 page individual response to the talk or work(s) in the show
+              that feels collectively created to you. What interested you in them? What ideas does it give you for your own project?</p>
+            <p>Turn in your response (individual) and the study (partners) via the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=1213945371'>studies spreadsheet</a> by 9am on 11/14. Come prepared to share in class.</p>
+          </div>
+
+          <h3 id='p6'>Final Project: Iterate and Refine (DUE 12/5)</h3>
+          <div id='p6-content' class='toggle' style='display:block;'>
+            <h4>Media</h4>
+            Getting Started with p5.js:
+            <ul>
+              <li>9/Objects</li>
+            </ul>
+            YouTube:
+            <ul>
+              <li><a target="_blank" href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/6-objects/1-intro">Object-Oriented Programming with ES6</a></li>
+              <li><a target="_blank" href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/6-objects/2-classes">Classes in ES6</a></li>
+              <li><a target="_blank" href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/6-objects/3-constructor">Constructor Arguments with Classes</a></li>
+              <li><a target="_blank" href="https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/6-objects/4-editor-js-files">JavaScript Files in the p5.js Web Editor</a></li>
+            </ul>
+            
+            
+            <p>Read all of the media in time for class on Monday. Type and run the programs as you read the text.</p>
+
+            <h4>Description</h4>
+
+            Part 1 due 11/16:
+            <ul>
+              <li>Use study 1, 2, 3, 4, or 5 as a prototype for your final project. Continue the work and ideas that you created for one of these studies. Expand the idea beyond the original one-week study into a project that can be completed for the final review on 12/5.</li>
+              <li><b>Fill out the <a href='https://docs.google.com/document/d/1M3U3WK3Cfa3bFBwrtM_fG7rkm8_c_KGnqpF8wdtLi0k/edit?usp=sharing' target='_blank'>Project Proposal Form</a> and come prepared to discuss your proposal on Tuesday 11/16.</b></li>
+            </ul>
+            
+            Part 2 due 11/21:
+            <ul>
+              <li>Prepare a mini pecha kucha presentation on an artist or designer that inspires or informs your final project. The presentation will be in google slides, with 10 auto-advancing slides displayed for 20 seconds each. 
+                This totals a rapid three minutes and twenty seconds presentation. This format can be fun, casual, and chaotic.</li>
+              <li>Create 10 slides (11 with your name) by duplicating <a href="https://docs.google.com/presentation/d/1aWTAGYKWXo9efgCGnizSc66YA4NBLysBhaI6DvXVRx4/edit#slide=id.p" target="_blank">this template</a> 
+                  and place in the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=1292703444'>studies spreadsheet</a> by 9am on 11/21.</li>
+              <li><b>Ensure that your slides are viewable! (Share > Anyone with the link)</b></li>
+            </ul>
+
+            Part 3 due 12/5:
+            <ul>
+              <li>Turn in your project via the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=75572381'>studies spreadsheet</a> by 9am on 12/5. Come prepared to share in class. Final documentation will be due by 12/8.</li>
+            </ul>
+          </div>
+
+          <h3 id='p7'>Final Project Documentation (DUE 12/8)</h3>
+          <div id='p7-content' class='toggle' style='display:none;'>
+
+            <h4>Description</h4>
+            <p>Document your final project with text description, code, AND a short video OR a series of images/screen captures OR some combination of video and image. 
+              Videos can be uploaded to Vimeo or YouTube for easy embedding. Place all these elements either on a page on your personal portfolio website, in a google doc.
+              <b>If you use a google doc, ensure it is publicly viewable or shared with lmccart@ucla.edu and julesjohnston@g.ucla.edu</b>.</p>
+
+            <p>Enter the URL of your project documentation into the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1ePtab7Yj9XtUtuCKWQROELVMLG4Hslk_cwzfOioyHFA/edit#gid=1292703444'>studies spreadsheet</a> by 11:59pm on 12/8.</p>
+          </div>
+        </section>
+        
+      </div>
+
+      <!-- RESOURCES -->
+      <div id='resources' class='block'>
+        
+        <h2>Resources</h2>       
+        <section>
+          <h3 id='javascript'>JAVASCRIPT</h3>
+          <ul>
+            <li><a href='http://p5js.org'>p5js.org</a> - p5.js website, includes library, reference, examples, and tutorials</li>
+            <li><a href='https://www.amazon.com/Getting-Started-p5-js-Interactive-JavaScript-dp-1457186772/dp/1457186772/ref=mt_paperback?_encoding=UTF8&me=&qid=' target='_blank'>Getting Started with p5.js</a></li>
+            <li><a href='https://forum.processing.org/two/'>p5.js forum</a> - good place for p5.js programming questions</li>
+            <li><a href='https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA'>Daniel Shiffman's Coding Train videos</a> - p5.js tutorials</li>
+            <li><a href='https://www.codecademy.com/learn/javascript'>Codecademy: JavaScript</a></li>
+            <li><a href='https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772'>Getting Started with p5.js</a> - by Lauren McCarthy, Casey Reas, and Ben Fry, O'Reilly 2016</li>
+            <li><a href='https://www.kadenze.com/courses/introduction-to-programming-for-the-visual-arts-with-p5-js/info'>Intro to programming for the visual arts with p5.js</a> - online class from kadenze, free with sign up</li>
+            <li><a href='https://github.com/getify/You-Dont-Know-JS'>You Don't Know JS</a></li>
+          </ul>
+        </section>
+          
+        <section>
+          <h3 id='html_css'>HTML &amp; CSS</h3>
+          <ul>
+            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element'>HTML Element Reference</a></li>
+            <li><a href='https://www.codecademy.com/articles/glossary-html'>Codecademy HTML Glossary</a></li>
+            <li><a href='http://htmldog.com/references/css/properties/'>CSS Property Reference</a></li>
+            <li><a href='https://www.codecademy.com/learn/web'>Codecademy: HTML &amp; CSS</a></li>
+            <li><a href='https://www.khanacademy.org/computing/computer-programming/html-css'>Khan Academy: Intro to HTML &amp; CSS</a></li>
+            <li><a href='https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction'>MDN: Intro to HTML</a></li>
+            <li><a href='http://learn.shayhowe.com/html-css/'>Learn HTML &amp; CSS</a> - another great tutorial</li>
+            <li><a href='http://learnlayout.com/'>Learn CSS Layout</a></li>
+            <li><a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'>Guide to Flexbox</a></li>
+          </ul>
+        </section>
+          
+        <section>
+          <h3 id='html_css'>Class Notes &amp; Examples</h3>
+          Week 1
+          <ul>
+            <li><a href='https://docs.google.com/presentation/d/1k3sZnxzyikpE_8o0d7DrqLW-5f9-NtbiblW3SQwOVvA/edit?usp=sharing' target='_blank'>week 1 slides</a></li>
+          </ul>
+          Week 2
+          <ul>
+            <li><a href='https://docs.google.com/presentation/d/1LetGuyXZJHNrXzr0cMoPSVBLeGgwwOgcqUYXanC1i_A/' target='_blank'>week 2 slides</a></li>
+          </ul>
+          Week 3
+          <ul>
+            <li><a href="https://docs.google.com/presentation/d/13OF1B_P6RYUpQuGW__gg0xr__olYEaCVxZC-XXKjJsU/edit?usp=sharing" target="_blank">week 3 slides</a></li>
+          </ul>
+          Week 4
+          <ul>
+            <li><a href="https://docs.google.com/presentation/d/1shRb7sbWCNr_dbiYqHzMHSYxQZ1gg3h3IPuLmNn6_Xw/edit?usp=sharing" target="_blank">week 4 slides</a></li>
+          </ul>
+          Week 5
+          <ul>
+            <li><a href="https://docs.google.com/presentation/d/1pjvxnsJWkCJc8EC-GpOq1q9W83l_jlSBXYAGsB0-yIk/edit?usp=sharing" target="_blank">week 5 slides</a></li>
+          </ul>
+          Week 6
+          <ul>
+            <li><a href="https://docs.google.com/presentation/d/1U1t0Lg9vpU6jPt5DQGEvo8Idow5Kj9GDzdQjD_LngOA/edit?usp=sharing" target="_blank">week 6 slides</a></li>
+          </ul>
+        </section>
+
+          
+        <section>
+          <h3 id='html_css'>Inspiration</h3>
+          <ul>
+            <li><a href='http://www.digiart21.org/' target='_blank'>21st Century Digital Art</a></li>
+            <li><a href="http://creativeapplications.net" target='_blank'>Creative Applications</a></li>
+            <li><a href="http://openprocessing.org" target='_blank'>Open Processing</a></li>
+            <li><a href="http://eyeofestival.com" target='_blank'>Eyeo Festival</a> talks on <a href="https://vimeo.com/eyeofestival">Vimeo</a></li>
+            <li><a href="http://formandcode.com/links" target='_blank'>Artists featured in Form+Code</a></li>
+        </section>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
